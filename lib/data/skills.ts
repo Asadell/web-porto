@@ -14,7 +14,7 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     category: "Mobile",
-    skills: ["Flutter", "Dart", "Firebase", "Mobile UI/UX"],
+    skills: ["Flutter", "Dart", "Firebase"],
   },
   {
     category: "Database & Tools",
