@@ -26,13 +26,13 @@ export default function Projects() {
 
   function ProjectImage({ src, alt, className }: { src: string; alt: string; className: string }) {
     const [imgSrc, setImgSrc] = useState(src)
-    
+
     return (
       <img
         src={imgSrc}
         alt={alt}
         className={className}
-        onError={() => {
+        onError={(e) => {
           setImgSrc("/default.png")
         }}
       />

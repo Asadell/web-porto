@@ -5,11 +5,11 @@ import { notFound } from "next/navigation"
 import Link from "next/link"
 import { Globe, Play, Download, Github, ChevronLeft, Check } from "lucide-react"
 import { motion } from "framer-motion"
-import { projectDetails } from "@/lib/data/project-details"
+import { projectsData } from "@/lib/data/projects"
 
 export default function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = use(params)
-  const project = projectDetails.find((p) => p.slug === slug)
+  const project = projectsData.find((p) => p.slug === slug)
 
   if (!project) {
     notFound()
@@ -38,7 +38,7 @@ export default function ProjectPage({ params }: { params: Promise<{ slug: string
         src={imgSrc}
         alt={alt}
         className={className}
-        onError={() => {
+        onError={(e) => {
           setImgSrc("/default.png")
         }}
       />

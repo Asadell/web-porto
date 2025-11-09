@@ -66,11 +66,13 @@ export default function Hero() {
               <ArrowRight className="w-4 h-4" />
             </Link>
             <a
-              href="#"
+              href="https://docs.google.com/document/d/1fL2D8aPXTpyI49SDwdApdX3A47WYsig4XxAh_mJTa8Q/edit?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-accent text-accent rounded-lg font-medium hover:bg-accent hover:text-accent-foreground transition cursor-pointer"
             >
               <Download className="w-4 h-4" />
-              Download CV
+              View CV
             </a>
           </motion.div>
         </motion.div>
