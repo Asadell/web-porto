@@ -9,23 +9,16 @@ export interface Article {
 export const articlesData: Article[] = [
   {
     id: "1",
-    title: "Building Scalable APIs with Next.js Server Actions",
-    date: "Dec 15, 2024",
-    readTime: "8 min read",
-    link: "https://medium.com",
-  },
-  {
-    id: "2",
-    title: "React Performance Optimization: Patterns and Best Practices",
-    date: "Dec 8, 2024",
-    readTime: "12 min read",
-    link: "https://medium.com",
-  },
-  {
-    id: "3",
-    title: "TypeScript Tips for Full Stack Developers",
-    date: "Nov 30, 2024",
+    title: "Implementing Multi-Role User Access in Laravel API with Spatie",
+    date: "Oct 26, 2024",
     readTime: "6 min read",
-    link: "https://medium.com",
+    link: "https://medium.com/himit-pens/implementing-user-roles-in-laravel-api-with-spatie-48b059a3b18f",
   },
+  // {
+  //   id: "2",
+  //   title: "Pentingnya Sertifikasi bagi Programmer",
+  //   date: "Jan 6, 2024",
+  //   readTime: "5 min read",
+  //   link: "https://medium.com/@asadelsatrio/pentingnya-sertifikasi-bagi-programmer",
+  // },
 ]

@@ -7,6 +7,7 @@ import Collaborations from "@/components/collaborations"
 import Articles from "@/components/articles"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
+import Organizations from "@/components/organizations"
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Skills />
         <Projects />
         {/* <Collaborations /> */}
+        {/* <Organizations /> */}
         <Articles />
         <Contact />
       </main>

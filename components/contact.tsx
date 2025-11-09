@@ -29,8 +29,8 @@ export default function Contact() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <h3 className="font-semibold text-lg">Email</h3>
-            <a href="mailto:hello@example.com" className="text-accent hover:underline">
-              hello@example.com
+            <a href="mailto:asadelsatrio@gmail.com" className="text-accent hover:underline">
+              asadelsatrio@gmail.com
             </a>
           </motion.div>
           <motion.div 
@@ -42,14 +42,14 @@ export default function Contact() {
           >
             <h3 className="font-semibold text-lg">Social</h3>
             <div className="flex gap-4">
-              <a href="#" className="text-muted-foreground hover:text-accent transition">
+              <a href="https://github.com/Asadell" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition">
                 GitHub
               </a>
-              <a href="#" className="text-muted-foreground hover:text-accent transition">
+              <a href="https://linkedin.com/in/asadell" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition">
                 LinkedIn
               </a>
-              <a href="#" className="text-muted-foreground hover:text-accent transition">
-                Twitter
+              <a href="https://medium.com/@muhammadsatrioasadel" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition">
+                Medium
               </a>
             </div>
           </motion.div>

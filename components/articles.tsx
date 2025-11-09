@@ -65,7 +65,7 @@ export default function Articles() {
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           <a
-            href="https://medium.com"
+            href="https://medium.com/@muhammadsatrioasadel"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 border-2 border-accent text-accent rounded-lg font-medium hover:bg-accent hover:text-accent-foreground transition cursor-pointer"

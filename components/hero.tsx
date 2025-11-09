@@ -8,6 +8,7 @@ export default function Hero() {
   return (
     <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32">
       <div className="flex flex-col-reverse lg:flex-row lg:items-center lg:gap-12 gap-8">
+        {/* Text Content */}
         <motion.div 
           className="flex-1 space-y-6"
           initial={{ opacity: 0, x: -50 }}
@@ -47,8 +48,8 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}
           >
-            Full Stack Developer crafting beautiful, performant digital experiences with modern web technologies.
-            Specialized in React, Next.js, TypeScript, and backend development.
+            Full-Stack and Mobile Developer crafting scalable, user-centered applications with modern technologies.
+            Specialized in Flutter, Laravel, Golang, Next.js, and Firebase with strong backend architecture expertise.
           </motion.p>
 
           <motion.div 
@@ -74,6 +75,7 @@ export default function Hero() {
           </motion.div>
         </motion.div>
 
+        {/* Profile Image */}
         <motion.div 
           className="flex-1 flex justify-center lg:justify-end"
           initial={{ opacity: 0, scale: 0.8 }}

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 
-const competencies = ["JavaScript", "TypeScript", "React", "Next.js", "Node.js", "Flutter", "Firebase", "Mobile Development", "Database Design", "UI/UX"]
+const competencies = ["Laravel", "Golang", "Flutter", "React.js", "Next.js", "Firebase", "TypeScript", "REST API", "IoT Integration", "AWS"]
 
 export default function About() {
   return (
@@ -28,10 +28,10 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a passionate full-stack and mobile developer with expertise in building scalable web and mobile applications with beautiful user interfaces. I specialize in creating cross-platform solutions and believe in writing clean, maintainable code while staying updated with the latest technologies.
+              Full-Stack and Mobile Developer with 1 year of experience building scalable, user-centered web and mobile applications. Proficient in Flutter, Laravel, Golang, Next.js, and Firebase, with a strong grasp of backend architecture, API integration, and modern UI design.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              When I'm not coding, you'll find me exploring new technologies, contributing to open source, or sharing knowledge with the developer community.
+              Currently, I’m a 5th-semester Informatics Engineering student at PENS, actively participating in research projects and tech events as a speaker. I enjoy learning new technologies, solving challenging problems, and building digital solutions that make a real impact.
             </p>
           </motion.div>
 
