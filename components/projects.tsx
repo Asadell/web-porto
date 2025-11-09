@@ -1,13 +1,14 @@
 "use client"
 
-import { useState, useMemo } from "react"
+import { useState, useMemo, useEffect } from "react"
 import Link from "next/link"
-import { RotateCcw } from "lucide-react"
+import { RotateCcw, ChevronDown } from "lucide-react"
 import { motion } from "framer-motion"
 import { projectsData } from "@/lib/data/projects"
 
 export default function Projects() {
   const [selectedTags, setSelectedTags] = useState<string[]>([])
+  const [displayCount, setDisplayCount] = useState(6) 
 
   const allTags = Array.from(new Set(projectsData.flatMap((p) => p.tags)))
 
@@ -16,25 +17,55 @@ export default function Projects() {
     return projectsData.filter((project) => selectedTags.every((tag) => project.tags.includes(tag)))
   }, [selectedTags])
 
+  const displayedProjects = filteredProjects.slice(0, displayCount)
+  const hasMore = displayCount < filteredProjects.length
+
   const toggleTag = (tag: string) => {
     setSelectedTags((prev) => (prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag]))
+    setDisplayCount(6) 
   }
 
   const resetFilters = () => {
     setSelectedTags([])
+    setDisplayCount(6)
+  }
+
+  const loadMore = () => {
+    setDisplayCount((prev) => prev + 6) 
   }
 
   function ProjectImage({ src, alt, className }: { src: string; alt: string; className: string }) {
-    const [imgSrc, setImgSrc] = useState(src)
+    const [imageSrc, setImageSrc] = useState("/default.png")
+    const [isLoading, setIsLoading] = useState(true)
+
+    useEffect(() => {
+      if (!src || src === "/default.png") {
+        setImageSrc("/default.png")
+        setIsLoading(false)
+        return
+      }
+
+      setIsLoading(true)
+      const img = new Image()
+      
+      img.onload = () => {
+        setImageSrc(src)
+        setIsLoading(false)
+      }
+      
+      img.onerror = () => {
+        setImageSrc("/default.png")
+        setIsLoading(false)
+      }
+      
+      img.src = src
+    }, [src])
 
     return (
       <img
-        src={imgSrc}
+        src={imageSrc}
         alt={alt}
         className={className}
-        onError={(e) => {
-          setImgSrc("/default.png")
-        }}
       />
     )
   }
@@ -102,7 +133,7 @@ export default function Projects() {
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredProjects.map((project, index) => (
+          {displayedProjects.map((project, index) => (
             <motion.div
               key={project.id}
               initial={{ opacity: 0, y: 30 }}
@@ -140,6 +171,23 @@ export default function Projects() {
           ))}
         </div>
 
+        {hasMore && (
+          <motion.div 
+            className="flex justify-center pt-8"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <button
+              onClick={loadMore}
+              className="inline-flex items-center gap-2 px-8 py-3 bg-accent text-accent-foreground rounded-lg font-medium hover:shadow-lg hover:scale-105 transition cursor-pointer"
+            >
+              Load More Projects
+              <ChevronDown className="w-4 h-4" />
+            </button>
+          </motion.div>
+        )}
+
         {filteredProjects.length === 0 && (
           <motion.div 
             className="text-center py-12"
@@ -148,6 +196,17 @@ export default function Projects() {
             transition={{ duration: 0.5 }}
           >
             <p className="text-muted-foreground">No projects match the selected filters.</p>
+          </motion.div>
+        )}
+
+        {!hasMore && filteredProjects.length > 0 && (
+          <motion.div 
+            className="text-center py-8"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <p className="text-sm text-muted-foreground">You've reached the end of the list</p>
           </motion.div>
         )}
       </div>
