@@ -1,13 +1,14 @@
-import Header from "@/components/header"
-import Hero from "@/components/hero"
-import About from "@/components/about"
-import Skills from "@/components/skills"
-import Projects from "@/components/projects"
-import Collaborations from "@/components/collaborations"
-import Articles from "@/components/articles"
-import Contact from "@/components/contact"
-import Footer from "@/components/footer"
-import Organizations from "@/components/organizations"
+import Header from "@/components/header";
+import Hero from "@/components/hero";
+import About from "@/components/about";
+import Skills from "@/components/skills";
+import Projects from "@/components/projects";
+import Collaborations from "@/components/collaborations";
+import Articles from "@/components/articles";
+import Contact from "@/components/contact";
+import Footer from "@/components/footer";
+import Organizations from "@/components/organizations";
+import Achievements from "@/components/achievements";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <About />
         <Skills />
         <Projects />
+        <Achievements />
         {/* <Collaborations /> */}
         {/* <Organizations /> */}
         <Articles />
@@ -25,5 +27,5 @@ export default function Home() {
       </main>
       <Footer />
     </>
-  )
+  );
 }
