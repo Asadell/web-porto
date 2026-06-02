@@ -44,7 +44,7 @@ export default function Organizations() {
           ].map((tab) => (
             <motion.button
               key={tab.value}
-              onClick={() => setFilter(tab.value as any)}
+              onClick={() => setFilter(tab.value as "all" | "organization" | "committee")}
               className={`px-4 py-2 rounded-full text-sm font-medium transition cursor-pointer ${
                 filter === tab.value
                   ? "bg-accent text-accent-foreground shadow-md"

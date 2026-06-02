@@ -71,7 +71,7 @@ export default function Collaborations() {
         <div className="mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">Partners & Clients</h2>
           <p className="text-muted-foreground max-w-2xl">
-            Companies and teams I've had the privilege to collaborate with
+            Companies and teams I&apos;ve had the privilege to collaborate with
           </p>
         </div>
 
