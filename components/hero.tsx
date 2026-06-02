@@ -30,7 +30,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              Hi, I'm <span className="text-accent">Asadel</span>
+              Hi, I&apos;m <span className="text-accent">Asadel</span>
             </motion.h1>
             <motion.p
               className="text-base sm:text-lg text-muted-foreground"

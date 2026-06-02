@@ -14,9 +14,9 @@ export default function Contact() {
           transition={{ duration: 0.5 }}
         >
           <p className="text-sm text-muted-foreground font-medium uppercase tracking-wide">Get In Touch</p>
-          <h2 className="text-4xl sm:text-5xl font-bold">Let's Connect</h2>
+          <h2 className="text-4xl sm:text-5xl font-bold">Let&apos;s Connect</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Have a project in mind? I'd love to hear from you. Feel free to reach out!
+            Have a project in mind? I&apos;d love to hear from you. Feel free to reach out!
           </p>
         </motion.div>
 

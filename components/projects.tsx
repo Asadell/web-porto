@@ -40,7 +40,9 @@ export default function Projects() {
 
     useEffect(() => {
       if (!src || src === "/default.png") {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setImageSrc("/default.png")
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setIsLoading(false)
         return
       }
@@ -206,7 +208,7 @@ export default function Projects() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <p className="text-sm text-muted-foreground">You've reached the end of the list</p>
+            <p className="text-sm text-muted-foreground">You&apos;ve reached the end of the list</p>
           </motion.div>
         )}
       </div>

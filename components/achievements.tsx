@@ -43,7 +43,9 @@ function AchievementImage({
 
   useEffect(() => {
     if (!src || src === "/default.png") {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setImageSrc("/default.png");
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setIsLoading(false);
       return;
     }
