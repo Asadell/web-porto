@@ -2,13 +2,13 @@
 
 import { motion } from "framer-motion"
 
-const competencies = ["Laravel", "Golang", "Flutter", "React.js", "Next.js", "Firebase", "TypeScript", "REST API", "IoT Integration", "AWS"]
+const competencies = ["Golang", "ASP.NET Core", "Laravel", "Next.js", "Flutter", "Python", "FastAPI", "Docker", "RabbitMQ / NATS", "AI & Vision", "IoT Integration", "AWS"]
 
 export default function About() {
   return (
     <section id="about" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32">
       <div className="space-y-12">
-        <motion.div 
+        <motion.div
           className="space-y-4"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -20,7 +20,7 @@ export default function About() {
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
-          <motion.div 
+          <motion.div
             className="space-y-6"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -28,14 +28,14 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Full-Stack and Mobile Developer with 1 year of experience building scalable, user-centered web and mobile applications. Proficient in Flutter, Laravel, Golang, Next.js, and Firebase, with a strong grasp of backend architecture, API integration, and modern UI design.
+              Full-Stack and Backend Developer with 2 years of experience building web, mobile, and backend systems. Experienced in real-time IoT platforms, AI-powered automation, distributed messaging systems, and scalable application architecture. Comfortable working across the entire development lifecycle, from system design and backend implementation to deployment and infrastructure management.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Currently, I’m a 5th-semester Informatics Engineering student at PENS, actively participating in research projects and tech events as a speaker. I enjoy learning new technologies, solving challenging problems, and building digital solutions that make a real impact.
+              Currently, I’m a 6th-semester Informatics Engineering student at PENS with hands-on experience in building scalable backend systems, real-time data pipelines, AI-powered applications, and cloud-native solutions. I enjoy designing reliable architectures, automating complex workflows, and turning ideas into impactful products.
             </p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="space-y-4"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}

@@ -6,22 +6,22 @@ export interface SkillCategory {
 export const skillCategories: SkillCategory[] = [
   {
     category: "Backend",
-    skills: ["Laravel", "Golang", "Express.js", "Node.js", "REST API"],
+    skills: ["Golang", "ASP.NET Core", "Laravel", "Python", "FastAPI", "Node.js"],
   },
   {
     category: "Frontend",
-    skills: ["React.js", "Next.js", "Inertia.js", "TypeScript", "Tailwind CSS"],
+    skills: ["React.js", "Next.js", "Tailwind CSS", "TypeScript", "Inertia.js"],
   },
   {
     category: "Mobile",
-    skills: ["Flutter", "Dart", "Firebase"],
+    skills: ["Flutter", "Dart", "Firebase", "SQLite"],
   },
   {
-    category: "Database & Tools",
-    skills: ["MySQL", "PostgreSQL", "Firebase", "Git", "AWS"],
+    category: "DevOps & Tools",
+    skills: ["Docker", "RabbitMQ", "NATS", "PostgreSQL", "AWS", "Git"],
   },
   {
-    category: "IoT & ML",
-    skills: ["MQTT", "TensorFlow Lite", "Gemini API", "IoT Integration"],
+    category: "AI & IoT",
+    skills: ["Gemini AI", "YOLO11", "OpenCV", "RAG", "MQTT"],
   },
 ]

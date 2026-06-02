@@ -9,14 +9,14 @@ export default function Hero() {
     <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32">
       <div className="flex flex-col-reverse lg:flex-row lg:items-center lg:gap-12 gap-8">
         {/* Text Content */}
-        <motion.div 
+        <motion.div
           className="flex-1 space-y-6"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
         >
           <div className="space-y-2">
-            <motion.p 
+            <motion.p
               className="text-sm text-accent font-medium uppercase tracking-wide"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -24,7 +24,7 @@ export default function Hero() {
             >
               Welcome
             </motion.p>
-            <motion.h1 
+            <motion.h1
               className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-balance leading-tight"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -32,7 +32,7 @@ export default function Hero() {
             >
               Hi, I'm <span className="text-accent">Asadel</span>
             </motion.h1>
-            <motion.p 
+            <motion.p
               className="text-base sm:text-lg text-muted-foreground"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -42,17 +42,16 @@ export default function Hero() {
             </motion.p>
           </div>
 
-          <motion.p 
+          <motion.p
             className="text-base sm:text-lg text-muted-foreground max-w-2xl text-balance leading-relaxed"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}
           >
-            Full-Stack and Mobile Developer crafting scalable, user-centered applications with modern technologies.
-            Specialized in Flutter, Laravel, Golang, Next.js, and Firebase with strong backend architecture expertise.
+            Full-Stack and Backend Developer with experience building real-time IoT systems, AI-powered automation, and scalable web applications. Specialized in Golang, ASP.NET Core, Laravel, ReactJS, Next.js, Flutter, and modern cloud-native technologies.
           </motion.p>
 
-          <motion.div 
+          <motion.div
             className="flex flex-col sm:flex-row gap-3 pt-2"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -78,7 +77,7 @@ export default function Hero() {
         </motion.div>
 
         {/* Profile Image */}
-        <motion.div 
+        <motion.div
           className="flex-1 flex justify-center lg:justify-end"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
