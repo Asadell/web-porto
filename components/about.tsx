@@ -28,7 +28,7 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Full-Stack and Backend Developer with 2 years of experience building web, mobile, and backend systems. Experienced in real-time IoT platforms, AI-powered automation, distributed messaging systems, and scalable application architecture. Comfortable working across the entire development lifecycle, from system design and backend implementation to deployment and infrastructure management.
+              Full-Stack and Backend Developer with 3 years of experience building web, mobile, and backend systems. Experienced in real-time IoT platforms, AI-powered automation, distributed messaging systems, and scalable application architecture. Comfortable working across the entire development lifecycle, from system design and backend implementation to deployment and infrastructure management.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Currently, I’m a 6th-semester Informatics Engineering student at PENS with hands-on experience in building scalable backend systems, real-time data pipelines, AI-powered applications, and cloud-native solutions. I enjoy designing reliable architectures, automating complex workflows, and turning ideas into impactful products.
